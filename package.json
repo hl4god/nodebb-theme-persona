@@ -1,41 +1,19 @@
 {
-  "name": "nodebb-theme-persona",
-  "version": "4.0.114",
-  "nbbpm": {
-    "compatibility": "^0.8.2 || ^0.9.0 || ^1.0.0"
-  },
-  "description": "Persona theme for NodeBB",
-  "main": "theme.less",
+  "name": "nodebb-theme-persona-v1",
+  "version": "0.2.0",
+  "description": "nodebb plugin for override login",
   "repository": {
     "type": "git",
-    "url": "https://github.com/psychobunny/nodebb-theme-persona"
+    "url": "https://github.com/hl4god/nodebb-theme-persona.git"
   },
-  "keywords": [
-    "nodebb",
-    "theme",
-    "forum",
-    "bootstrap",
-    "responsive"
-  ],
-  "contributors": [
-    {
-      "name": "Andrew Rodrigues",
-      "email": "andrew@designcreateplay.com",
-      "url": "https://github.com/psychobunny"
-    },
-    {
-      "name": "Julian Lam",
-      "email": "julian@designcreateplay.com",
-      "url": "https://github.com/julianlam"
-    },
-    {
-      "name": "Barış Soner Uşaklı",
-      "email": "baris@designcreateplay.com",
-      "url": "https://github.com/barisusakli"
-    }
-  ],
-  "license": "BSD-2-Clause",
-  "bugs": {
-    "url": "https://github.com/psychobunny/nodebb-theme-persona/issues"
-  }
+  "main": "theme.less",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "nbbpm": {
+    "compatibility": "^1.0.0"
+  },
+  "keywords": ["nodebb","theme","persona","overridelogin"],
+  "author": "Holly <hl4god@gmail.com>",
+  "license": "BSD-2-Clause"
 }

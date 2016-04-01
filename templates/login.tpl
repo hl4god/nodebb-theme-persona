@@ -13,16 +13,32 @@
 			<form class="form-horizontal" role="form" method="post" target="login" id="login-form">
 				<div class="form-group">
 					<label for="username" class="col-lg-2 control-label">{allowLoginWith}</label>
+					<div class="col-lg-8">
+						<input class="form-control" type="text" placeholder="{allowLoginWith}" name="username" id="username" autocorrect="off" autocapitalize="off" />
+					</div>
+					<!-- 获取验证码按钮-->
+					<div class="col-lg-2">
+						<button class="btn btn-primary btn-lg btn-block" id="btnCode" type="button">[[user:code]]</button>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="password" class="col-lg-2 control-label">[[user:password_code]]</label>
+					<div class="col-lg-10">
+						<input class="form-control" type="text" placeholder="[[user:password_code]]" name="password" id="password" />
+					</div>
+				</div>
+				<!--<div class="form-group">
+					<label for="username" class="col-lg-2 control-label">{allowLoginWith}</label>
 					<div class="col-lg-10">
 						<input class="form-control" type="text" placeholder="{allowLoginWith}" name="username" id="username" autocorrect="off" autocapitalize="off" />
 					</div>
 				</div>
 				<div class="form-group">
-					<label for="password" class="col-lg-2 control-label">[[user:password]]</label>
+					<label for="code" class="col-lg-2 control-label">[[user:code]]</label>
 					<div class="col-lg-10">
-						<input class="form-control" type="password" placeholder="[[user:password]]" name="password" id="password" />
+						<input class="form-control" type="text" placeholder="[[user:code]]" name="code" id="code" />
 					</div>
-				</div>
+				</div>-->
 				<div class="form-group">
 					<div class="col-lg-offset-2 col-lg-10">
 						<div class="checkbox">

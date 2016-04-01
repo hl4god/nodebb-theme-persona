@@ -8,30 +8,22 @@
 			<div class="avatar pull-left">
 				<!-- IF showSelect -->
 				<div class="select" component="topic/select">
-					<!-- IF topics.thumb -->
-					<img src="{topics.thumb}" class="user-img" title="{topics.user.username}" />
-					<!-- ELSE -->
 					<!-- IF topics.user.picture -->
-					<img component="user/picture" data-uid="{topics.user.uid}" src="{topics.user.picture}" class="user-img" title="{topics.user.username}" />
+					{function.renderTopicImage}
 					<!-- ELSE -->
 					<div class="user-icon" style="background-color: {topics.user.icon:bgColor};" title="{topics.user.username}">{topics.user.icon:text}</div>
 					<!-- ENDIF topics.user.picture -->
-					<!-- ENDIF topics.thumb -->
 					<i class="fa fa-check"></i>
 				</div>
 				<!-- ENDIF showSelect -->
 
 				<!-- IF !showSelect -->
 				<a href="<!-- IF topics.user.userslug -->{config.relative_path}/user/{topics.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.user.userslug -->" class="pull-left">
-					<!-- IF topics.thumb -->
-					<img src="{topics.thumb}" class="user-img" title="{topics.user.username}" />
-					<!-- ELSE -->
 					<!-- IF topics.user.picture -->
-					<img component="user/picture" data-uid="{topics.user.uid}" src="{topics.user.picture}" class="user-img" title="{topics.user.username}" />
+					{function.renderTopicImage}
 					<!-- ELSE -->
 					<div class="user-icon" style="background-color: {topics.user.icon:bgColor};" title="{topics.user.username}">{topics.user.icon:text}</div>
 					<!-- ENDIF topics.user.picture -->
-					<!-- ENDIF topics.thumb -->
 				</a>
 				<!-- ENDIF !showSelect -->
 
