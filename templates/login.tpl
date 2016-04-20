@@ -22,9 +22,9 @@
 					</div>
 				</div>
 				<div class="form-group">
-					<label for="password" class="col-lg-2 control-label">[[user:password_code]]</label>
+					<label for="password" class="col-lg-2 control-label">[[user:code]]</label>
 					<div class="col-lg-10">
-						<input class="form-control" type="text" placeholder="[[user:password_code]]" name="password" id="password" />
+						<input class="form-control" type="text" placeholder="[[user:code]]" name="password" id="password" />
 					</div>
 				</div>
 				<!--<div class="form-group">
