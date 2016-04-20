@@ -1,5 +1,5 @@
 {
-	"id": "nodebb-theme-persona-v1",
+	"id": "nodebb-theme-persona",
 	"hooks": [],
 	"scripts": [
 		"lib/persona.js",
